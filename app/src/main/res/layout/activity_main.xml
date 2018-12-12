@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="name" />
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:ems="10"
+        android:hint="phone" />
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="30dp"
+        android:text="add"
+        android:background="#ADD8E6"
+        android:onClick="onClickAddName"/>
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnAdd"
+        android:layout_below="@+id/btnAdd"
+        android:layout_marginTop="20dp"
+        android:text="show"
+        android:background="#ADD8E6"
+        android:onClick="onClickRetrieveStudents"/>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnShow"
+        android:layout_alignLeft="@+id/btnShow"
+        android:layout_marginTop="20dp"
+        android:text="delete"
+        android:background="#ADD8E6" />
+
+</RelativeLayout>
